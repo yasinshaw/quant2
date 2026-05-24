@@ -92,7 +92,7 @@ def test_optimizer_merges_fixed_parameters(db, optimizer):
 - [ ] **Step 2: Run test to verify it fails**
 
 ```bash
-cd /Users/yasin/code/quant2
+cd ~/code/quant2
 pytest tests/test_optimizer.py::test_optimizer_merges_fixed_parameters -v
 ```
 
@@ -375,7 +375,7 @@ export interface OptimizationRequest {
 - [ ] **Step 2: Run TypeScript type check**
 
 ```bash
-cd /Users/yasin/code/quant2/frontend
+cd ~/code/quant2/frontend
 pnpm tsc --noEmit
 ```
 
@@ -900,7 +900,7 @@ test.describe('Parameter Optimization Toggle', () => {
 - [ ] **Step 2: Run E2E test**
 
 ```bash
-cd /Users/yasin/code/quant2/frontend
+cd ~/code/quant2/frontend
 pnpm dev &  # Start dev server in background
 sleep 5
 pnpm test:e2e optimize-toggle.spec.ts
@@ -942,11 +942,11 @@ git commit -m "test(e2e): add toggle functionality tests"
 
 ```bash
 # Start backend
-cd /Users/yasin/code/quant2/backend
+cd ~/code/quant2/backend
 python main.py
 
 # Start frontend (new terminal)
-cd /Users/yasin/code/quant2/frontend
+cd ~/code/quant2/frontend
 pnpm dev
 ```
 
@@ -968,7 +968,7 @@ Check if README or docs need updates for this feature.
 - [ ] **Step 3: Final integration test**
 
 ```bash
-cd /Users/yasin/code/quant2
+cd ~/code/quant2
 pytest tests/ -v
 cd frontend && pnpm test:e2e
 ```

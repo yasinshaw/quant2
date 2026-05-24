@@ -51,7 +51,7 @@ pip install -r requirements.txt
 python main.py  # Runs on http://localhost:8000
 
 # Run backend tests
-cd /Users/yasin/code/quant2
+cd ~/code/quant2
 pytest tests/ -v                    # All tests
 pytest tests/test_backtest_engine.py -v  # Single test file
 pytest tests/test_backtest_engine.py::TestBacktestEngine::test_run -v  # Single test

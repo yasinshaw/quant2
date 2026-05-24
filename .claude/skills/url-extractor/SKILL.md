@@ -16,7 +16,7 @@ curl -s http://localhost:8000/api/v1/strategies/ | head -c 200
 
 If not running:
 ```bash
-cd /Users/yasin/code/quant2 && ./start.sh start
+cd ~/code/quant2 && ./start.sh start
 ```
 
 ## URL Pattern Recognition

@@ -450,7 +450,7 @@ def test_get_all_symbol_interval_combinations(db_session):
 - [ ] **Step 4: Run test to verify it fails**
 
 ```bash
-cd /Users/yasin/code/quant2
+cd ~/code/quant2
 pytest tests/test_database_datasets.py::test_get_all_symbol_interval_combinations -v
 ```
 

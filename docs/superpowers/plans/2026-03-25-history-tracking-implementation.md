@@ -83,7 +83,7 @@ def test_delete_optimization_job(db):
 
 **Verify:**
 ```bash
-cd /Users/yasin/code/quant2
+cd ~/code/quant2
 pytest tests/test_database.py -v
 ```
 

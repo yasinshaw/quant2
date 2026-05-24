@@ -969,7 +969,7 @@ If migration fails:
 
 ## References
 
-- Existing codebase: `/Users/yasin/code/quant2`
+- Existing codebase: `~/code/quant2`
 - Database schema: `backend/database.py`
 - Backtest engine: `backend/core/backtest_engine.py`
 - Frontend components: `frontend/components/`

@@ -986,7 +986,7 @@ git commit -m "test(e2e): add sidebar component tests
 - [ ] **Step 1: 运行所有后端测试**
 
 ```bash
-cd /Users/yasin/code/quant2
+cd ~/code/quant2
 pytest tests/ -v
 ```
 

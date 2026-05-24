@@ -138,7 +138,7 @@ class TestMonteCarloSimulator:
 
 - [ ] **Step 2: Run tests to verify they fail**
 
-Run: `cd /Users/yasin/code/quant2 && python -m pytest tests/test_monte_carlo.py -v`
+Run: `cd ~/code/quant2 && python -m pytest tests/test_monte_carlo.py -v`
 Expected: FAIL — `ModuleNotFoundError: No module named 'backend.core.monte_carlo'`
 
 - [ ] **Step 3: Implement MonteCarloSimulator**
@@ -265,7 +265,7 @@ class MonteCarloSimulator:
 
 - [ ] **Step 4: Run tests to verify they pass**
 
-Run: `cd /Users/yasin/code/quant2 && python -m pytest tests/test_monte_carlo.py -v`
+Run: `cd ~/code/quant2 && python -m pytest tests/test_monte_carlo.py -v`
 Expected: All 7 tests PASS
 
 - [ ] **Step 5: Commit**
@@ -434,7 +434,7 @@ export interface MonteCarloResult {
 
 - [ ] **Step 3: Verify TypeScript compiles**
 
-Run: `cd /Users/yasin/code/quant2/frontend && npx tsc --noEmit`
+Run: `cd ~/code/quant2/frontend && npx tsc --noEmit`
 Expected: No errors related to new types
 
 - [ ] **Step 4: Commit**
@@ -716,7 +716,7 @@ function ReturnHistogram({ result }: { result: MonteCarloResult }) {
 
 - [ ] **Step 2: Verify TypeScript compiles**
 
-Run: `cd /Users/yasin/code/quant2/frontend && npx tsc --noEmit`
+Run: `cd ~/code/quant2/frontend && npx tsc --noEmit`
 Expected: No errors
 
 - [ ] **Step 3: Commit**
@@ -771,7 +771,7 @@ git commit -m "feat: integrate Monte Carlo simulation into backtest results page
 - [ ] **Step 1: Restart backend**
 
 ```bash
-cd /Users/yasin/code/quant2 && ./start.sh restart
+cd ~/code/quant2 && ./start.sh restart
 ```
 
 - [ ] **Step 2: Open results page in browser**
@@ -789,6 +789,6 @@ Navigate to http://localhost:3002/results/220 (or any completed backtest with >=
 - [ ] **Step 4: Run backend tests**
 
 ```bash
-cd /Users/yasin/code/quant2 && python -m pytest tests/test_monte_carlo.py -v
+cd ~/code/quant2 && python -m pytest tests/test_monte_carlo.py -v
 ```
 Expected: All 7 tests PASS

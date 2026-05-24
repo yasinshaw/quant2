@@ -2,7 +2,7 @@
 """Send multiple sample Feishu notifications."""
 import asyncio
 import sys
-sys.path.insert(0, '/Users/yasin/code/quant2')
+sys.path.insert(0, '~/code/quant2')
 
 from backend.live.notifier import notify_trade, notify_error, notify_status
 

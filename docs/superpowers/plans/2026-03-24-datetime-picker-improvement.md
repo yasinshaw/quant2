@@ -44,7 +44,7 @@ frontend/
 - [ ] **Step 1: 安装 react-datepicker 和 date-fns**
 
 ```bash
-cd /Users/yasin/code/quant2/frontend
+cd ~/code/quant2/frontend
 pnpm add react-datepicker@^6.9.0 date-fns@^3.3.0
 ```
 
@@ -78,7 +78,7 @@ git commit -m "chore: add react-datepicker and date-fns dependencies"
 - [ ] **Step 1: 创建组件目录**
 
 ```bash
-mkdir -p /Users/yasin/code/quant2/frontend/components/DateTimePicker
+mkdir -p ~/code/quant2/frontend/components/DateTimePicker
 ```
 
 - [ ] **Step 2: 编写 DateTimePicker 组件**
@@ -356,7 +356,7 @@ if (startDate && endDate && startDate >= endDate) {
 - [ ] **Step 6: 验证组件工作**
 
 ```bash
-cd /Users/yasin/code/quant2/frontend
+cd ~/code/quant2/frontend
 pnpm dev
 ```
 
@@ -511,7 +511,7 @@ const end = endTime;
 - [ ] **Step 6: 验证组件工作**
 
 ```bash
-cd /Users/yasin/code/quant2/frontend
+cd ~/code/quant2/frontend
 pnpm dev
 ```
 
@@ -665,7 +665,7 @@ const end = endTime;
 - [ ] **Step 6: 验证组件工作**
 
 ```bash
-cd /Users/yasin/code/quant2/frontend
+cd ~/code/quant2/frontend
 pnpm dev
 ```
 
@@ -730,7 +730,7 @@ await page.waitForTimeout(100); // 等待动画完成
 - [ ] **Step 4: 运行测试验证**
 
 ```bash
-cd /Users/yasin/code/quant2/frontend
+cd ~/code/quant2/frontend
 pnpm test:e2e e2e/data-download.spec.ts
 ```
 
@@ -792,7 +792,7 @@ expect(startTimeValue).toMatch(/\d{4}-\d{2}-\d{2} \d{2}:\d{2}/);
 - [ ] **Step 4: 运行测试验证**
 
 ```bash
-cd /Users/yasin/code/quant2/frontend
+cd ~/code/quant2/frontend
 pnpm test:e2e e2e/backtest-flow.spec.ts
 ```
 
@@ -838,7 +838,7 @@ await page.click('.react-datepicker__day--031:not(.react-datepicker__day--outsid
 - [ ] **Step 3: 运行测试验证**
 
 ```bash
-cd /Users/yasin/code/quant2/frontend
+cd ~/code/quant2/frontend
 pnpm test:e2e e2e/optimization.spec.ts
 ```
 
@@ -861,7 +861,7 @@ git commit -m "test: update E2E tests for DateTimePicker in optimization"
 - [ ] **Step 1: 运行前端 lint 检查**
 
 ```bash
-cd /Users/yasin/code/quant2/frontend
+cd ~/code/quant2/frontend
 pnpm lint
 ```
 
