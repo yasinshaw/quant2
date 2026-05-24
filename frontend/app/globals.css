@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ant Design styles reset */
+@layer base {
+  /* Ensure antd components work with Tailwind */
+  .ant-btn {
+    @apply transition-colors duration-200;
+  }
+
+  .ant-input,
+  .ant-select-selector {
+    @apply transition-colors duration-200;
+  }
+}
+
+:root {
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+/* Professional light mode defaults */
+body {
+  @apply text-slate-900 bg-slate-50;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100 dark:bg-slate-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-slate-600 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400 dark:bg-slate-500;
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading font-semibold;
+}
+
+/* Date Picker Styles - react-day-picker overrides */
+@layer components {
+  /* Light mode */
+  .rdp-root {
+    --rdp-cell-size: 36px;
+    --rdp-accent-color: #2563eb; /* primary-600 */
+    --rdp-background-color: #ffffff;
+    --rdp-text-color: #0f172a; /* slate-900 */
+    --rdp-day-hover-bg: #eff6ff; /* blue-50 */
+    --rdp-disabled-color: #94a3b8; /* slate-400 */
+    font-family: inherit;
+  }
+
+  /* Dark mode */
+  .dark .rdp-root {
+    --rdp-accent-color: #3b82f6; /* primary-500 */
+    --rdp-background-color: #334155; /* slate-700 */
+    --rdp-text-color: #f1f5f9; /* slate-100 */
+    --rdp-day-hover-bg: #475569; /* slate-600 */
+    --rdp-disabled-color: #64748b; /* slate-500 */
+  }
+
+  /* Selected day styling */
+  .rdp-day_selected {
+    font-weight: 600;
+  }
+
+  /* Today indicator */
+  .rdp-day_today {
+    border: 2px solid var(--rdp-accent-color);
+  }
+
+  /* Disabled day styling */
+  .rdp-day_disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* Navigation buttons */
+  .rdp-nav_button {
+    color: var(--rdp-text-color);
+    transition: color 0.2s;
+  }
+
+  .rdp-nav_button:hover {
+    color: var(--rdp-accent-color);
+  }
+
+  /* Day cell hover */
+  .rdp-day:not(.rdp-day_disabled):hover {
+    background-color: var(--rdp-day-hover-bg);
+  }
+}

@@ -1,0 +1,86 @@
+# Worktrees
+.worktrees/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+test_venv/
+.env
+
+# Node
+node_modules/
+.next/
+.pnpm-store/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+test-results/
+playwright-report/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Superpowers
+.superpowers/
+
+# Runtime
+.pids/
+
+# Test data and results
+*.json
+!package.json
+!package-lock.json
+!pnpm-lock.yaml
+
+# Test scripts
+test*.sh
+test*.csv
+test*.html
+
+# Backup files
+*.backup
+*.bak
+
+# Local data
+data/
+
+# Strategies (keep demo strategies only)
+backend/strategies/*.py
+!backend/strategies/__init__.py
+!backend/strategies/example_sma_strategy.py
+!backend/strategies/rsi_strategy.py
